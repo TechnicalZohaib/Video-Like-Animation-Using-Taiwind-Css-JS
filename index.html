@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Project2</title>
+    <!-- Tailwind Css Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Remix Icon Link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"rel="stylesheet"/>
+    <!-- Internal Css -->
+     <style>
+        #container i{
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform 0.4s ease;
+        }
+     </style>
+</head>
+<body class="bg-[#CCFFFF] flex justify-center items-center h-screen">
+    
+    <div id="container" class="w-[350px] h-[500px] rounded-xl bg-black relative cursor-pointer">
+        <h1 class="text-white text-center text-2xl font-bold py-[10px]">Double tap to video</h1>
+        <img src="img/man.jpg" class="w-full h-[500px] rounded-r-xl rounded-b-xl rounded-t-none object-cover shadow-xl" id="img">
+        <i class="ri-heart-fill absolute top-[50%] left-[50%] text-[#FF3333] text-[70px] opacity-0" id="love"></i>
+    </div>
+
+
+    <!-- JS Link -->
+     <script src="script.js"></script>
+</body>
+</html>
